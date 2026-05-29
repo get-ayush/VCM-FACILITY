@@ -1,0 +1,233 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "creation": "2026-05-11 11:25:37.433157",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_6fw0",
+  "amended_from",
+  "date",
+  "fuel_id",
+  "vehicle_id",
+  "column_break_zrjb",
+  "petrol_pump_name",
+  "driver_name",
+  "vehicle_details_section",
+  "vehicle_number",
+  "fuel_tank_capacity",
+  "fuel_type",
+  "column_break_slbt",
+  "cost_centre",
+  "vehicle_model",
+  "fuel_entry_section",
+  "quantity",
+  "rate",
+  "amount_paid",
+  "column_break_gwas",
+  "hkm_slip_no",
+  "invoice_number",
+  "security_verified_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_6fw0",
+   "fieldtype": "Section Break",
+   "label": "Fuel Info"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fuel Info",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "default": "   ",
+   "fieldname": "fuel_id",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Fuel ID",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zrjb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "petrol_pump_name",
+   "fieldtype": "Select",
+   "label": "Petrol Pump Name",
+   "options": "\nShri Satyapal Singh Filling Station\nShri Bankey Bihari Petrol Pump",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Link",
+   "label": "Driver Name",
+   "options": "Drivers Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_id",
+   "fieldtype": "Link",
+   "label": "Vehicle ID",
+   "options": "Vehicle Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fetch_from": "vehicle_id.vehicle_no",
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_id.vehicle_model",
+   "fieldname": "vehicle_model",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle Model",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_id.fuel_tank_capacity",
+   "fieldname": "fuel_tank_capacity",
+   "fieldtype": "Float",
+   "label": "Fuel Tank Capacity",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_id.fuel_type",
+   "fieldname": "fuel_type",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Fuel Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_id.cost_centre",
+   "fieldname": "cost_centre",
+   "fieldtype": "Data",
+   "label": "Cost Centre",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_slbt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fuel_entry_section",
+   "fieldtype": "Section Break",
+   "label": "Fuel Entry"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Amount Paid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gwas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hkm_slip_no",
+   "fieldtype": "Data",
+   "label": "HKM Slip No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Invoice Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "security_verified_by",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Security Verified By",
+   "options": "Garima\nOther",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-11 17:01:08.557974",
+ "modified_by": "Administrator",
+ "module": "Facility ERP",
+ "name": "Fuel Info",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
