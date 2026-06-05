@@ -2,8 +2,22 @@
 # For license information, please see license.txt
 
 # import frappe
+import frappe
 from frappe.model.document import Document
+from frappe.model.naming import make_autoname
+from datetime import datetime
 
 
 class FuelInfo(Document):
-	pass
+
+    def autoname(self):
+
+        month_year = datetime.now().strftime("%m%y")
+
+        generated_name = make_autoname(
+            f"FUEL-{month_year}-.####"
+        )
+
+        self.name = generated_name
+
+        self.fuel_id = generated_name

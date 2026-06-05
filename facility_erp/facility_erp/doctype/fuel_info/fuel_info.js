@@ -6,6 +6,7 @@
 
 // 	},
 // });
+
 frappe.ui.form.on('Fuel Info', {
     quantity(frm) {
         calculate_amount(frm);
