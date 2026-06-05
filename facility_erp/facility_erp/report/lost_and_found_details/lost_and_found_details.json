@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2026-05-31 00:29:22.128671",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "letter_head": null,
+ "modified": "2026-05-31 15:16:51.144151",
+ "modified_by": "Administrator",
+ "module": "Facility ERP",
+ "name": "Lost And Found Details",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Lost And Found Info",
+ "report_name": "Lost And Found Details",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

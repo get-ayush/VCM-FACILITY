@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2026-05-10 13:25:51.654944",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_details_section",
+  "vehicle_no",
+  "vehicle_model",
+  "engine_no",
+  "chasis_number",
+  "fuel_tank_capacity",
+  "fuel_type",
+  "insurance_validity_date",
+  "vehicle_type",
+  "column_break_tawj",
+  "registration_date",
+  "registration_valid_upto",
+  "emission_norm",
+  "cost_centre",
+  "curb_weight",
+  "wheel_base",
+  "puc_valid_upto",
+  "horse_power"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle No"
+  },
+  {
+   "fieldname": "vehicle_model",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle Model"
+  },
+  {
+   "fieldname": "engine_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Engine No"
+  },
+  {
+   "fieldname": "chasis_number",
+   "fieldtype": "Data",
+   "label": "Chasis Number"
+  },
+  {
+   "fieldname": "fuel_tank_capacity",
+   "fieldtype": "Float",
+   "label": "Fuel Tank Capacity"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "Petrol\nDiesel\nCNG"
+  },
+  {
+   "fieldname": "insurance_validity_date",
+   "fieldtype": "Date",
+   "label": "Insurance Validity Date"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle Type",
+   "options": "Four Wheeler\nTwo Wheeler\nElectric Vehicle\nOther"
+  },
+  {
+   "fieldname": "column_break_tawj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fieldname": "registration_valid_upto",
+   "fieldtype": "Date",
+   "label": "Registration Valid UpTo"
+  },
+  {
+   "fieldname": "emission_norm",
+   "fieldtype": "Select",
+   "label": "Emission Norm",
+   "options": "BSII\nBSIII\nBSIV\nBSV\nBSVI"
+  },
+  {
+   "fieldname": "cost_centre",
+   "fieldtype": "Select",
+   "label": "Cost Centre",
+   "options": "Vehicle\nAnnadan\nYFH\nFund-Raising\nSadhika"
+  },
+  {
+   "fieldname": "curb_weight",
+   "fieldtype": "Data",
+   "label": "Curb Weight"
+  },
+  {
+   "fieldname": "wheel_base",
+   "fieldtype": "Data",
+   "label": "Wheel Base"
+  },
+  {
+   "fieldname": "puc_valid_upto",
+   "fieldtype": "Date",
+   "label": "PUC Valid UpTo"
+  },
+  {
+   "fieldname": "horse_power",
+   "fieldtype": "Float",
+   "label": "Horse Power"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-01 18:11:36.609438",
+ "modified_by": "Administrator",
+ "module": "VCM Vehicle",
+ "name": "Vehicle Master",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-01 14:19:31.743722",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_29bz",
+  "amended_from",
+  "incident_id",
+  "incident_date",
+  "column_break_mvlv",
+  "incident_time",
+  "incident_details_section",
+  "security_name",
+  "first_report_by",
+  "description",
+  "resolve_time",
+  "column_break_qwfj",
+  "type_of_incident",
+  "location",
+  "action_taken",
+  "incident_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_29bz",
+   "fieldtype": "Section Break",
+   "label": "Date & Time"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Incident Report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "incident_id",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Incident ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "incident_date",
+   "fieldtype": "Date",
+   "label": "Incident Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mvlv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "incident_time",
+   "fieldtype": "Time",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Incident Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "incident_details_section",
+   "fieldtype": "Section Break",
+   "label": "Incident Details"
+  },
+  {
+   "fieldname": "security_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Security Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_report_by",
+   "fieldtype": "Data",
+   "label": "First Report By",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "resolve_time",
+   "fieldtype": "Time",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Resolve Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qwfj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_of_incident",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Type of Incident ",
+   "options": "\nFire Emergency\nGas Leak\nChemical Spill\nExplosion\nElectrical Hazard\nStructural Collapse\nNatural Disaster\nPersonal Injury\nMedical Emergency\nVehicle Accident\nMachinery Malfunction\nPower Outage\nSystem Breakdown\nTheft\nSnake",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "action_taken",
+   "fieldtype": "Long Text",
+   "label": "Action Taken",
+   "reqd": 1
+  },
+  {
+   "fieldname": "incident_image",
+   "fieldtype": "Attach Image",
+   "label": "Incident Image",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-01 14:33:31.814504",
+ "modified_by": "Administrator",
+ "module": "VCM Security",
+ "name": "Incident Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

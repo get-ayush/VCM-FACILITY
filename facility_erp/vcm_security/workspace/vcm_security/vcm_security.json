@@ -1,0 +1,150 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"L1LLcvldXk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">VCM Security</span>\",\"col\":12}},{\"id\":\"DHyhh6RCBC\",\"type\":\"card\",\"data\":{\"card_name\":\"Lost & Found Info\",\"col\":4}},{\"id\":\"pZ6hRzWVMS\",\"type\":\"card\",\"data\":{\"card_name\":\"Incident Report\",\"col\":4}},{\"id\":\"6WwThJScLz\",\"type\":\"card\",\"data\":{\"card_name\":\"Security Daily Deployment \",\"col\":4}}]",
+ "creation": "2026-05-31 14:47:22.425615",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "lock",
+ "idx": 0,
+ "indicator_color": "purple",
+ "is_hidden": 0,
+ "label": "VCM Security",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lost And Found",
+   "link_count": 0,
+   "link_to": "Lost And Found Info",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lost And Found Info",
+   "link_count": 0,
+   "link_to": "Lost And Found Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Lost And Found Info",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "L&F Asset Claim",
+   "link_count": 0,
+   "link_to": "Asset Claim",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "L&F Asset Claim Info",
+   "link_count": 0,
+   "link_to": "Asset Claim Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Asset Claim",
+   "type": "Link"
+  },
+  {
+   "description": "Lost and Found Modules",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lost & Found Info",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lost & Found ",
+   "link_count": 0,
+   "link_to": "Lost And Found Info",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Claim ",
+   "link_count": 0,
+   "link_to": "Asset Claim",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Lost Complaint",
+   "link_count": 0,
+   "link_to": "Asset Lost Complaint",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Incident Report",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Incident Report Details",
+   "link_count": 0,
+   "link_to": "Incident Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Security Daily Deployment ",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Daily Deployment",
+   "link_count": 0,
+   "link_to": "Security Daily Deployment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-06-05 15:45:10.932125",
+ "modified_by": "Administrator",
+ "module": "VCM Security",
+ "name": "VCM Security",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [],
+ "title": "VCM Security"
+}

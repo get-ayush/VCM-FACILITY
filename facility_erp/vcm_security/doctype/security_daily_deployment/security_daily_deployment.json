@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-03 15:28:18.276673",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ctzs",
+  "amended_from",
+  "date",
+  "deployment_type",
+  "column_break_zmuf",
+  "assigned_by",
+  "in_house_shift_timing",
+  "section_break_jeym",
+  "deployment_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ctzs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Security Daily Deployment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "deployment_details",
+   "fieldtype": "Table",
+   "label": "Deployment Details",
+   "options": "Daily Deployment Child Table"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "deployment_type",
+   "fieldtype": "Select",
+   "label": "Deployment Type",
+   "options": "\nIn-House\nAgency"
+  },
+  {
+   "fieldname": "column_break_zmuf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_by",
+   "fieldtype": "Link",
+   "label": "Assigned BY",
+   "options": "VCM Employees"
+  },
+  {
+   "depends_on": "eval:doc.deployment_type==\"In-House Team\"",
+   "fieldname": "in_house_shift_timing",
+   "fieldtype": "Select",
+   "label": "Shift Timing",
+   "options": "\nShift A (6:00 Am - 2:00 Pm)\nShift B (2:00 Pm - 10:00 Pm)\nShift C (10:00 Pm - 6:00 Am)\nDay (7:00 Am - 7:00 Pm)\nNight (7:00 Pm - 7:00Am)"
+  },
+  {
+   "fieldname": "section_break_jeym",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-04 16:59:24.106044",
+ "modified_by": "Administrator",
+ "module": "VCM Security",
+ "name": "Security Daily Deployment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
