@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class DriverFFW(Document):
+class DepartmentBHAndCC(Document):
 	pass
