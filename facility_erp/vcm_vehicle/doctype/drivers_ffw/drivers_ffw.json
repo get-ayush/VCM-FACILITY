@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-06 13:05:37.311197",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_defd",
+  "amended_from",
+  "submission_date",
+  "ffw_id",
+  "trust",
+  "column_break_xjhd",
+  "driver_name",
+  "cost_centre",
+  "budget_head",
+  "section_break_uqbq",
+  "ffw_details",
+  "ffw_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_defd",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Drivers FFW",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Submission Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ffw_id",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "FFW ID",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_xjhd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Driver Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_centre",
+   "fieldtype": "Data",
+   "label": "Cost Centre"
+  },
+  {
+   "fieldname": "budget_head",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Budget Head",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_uqbq",
+   "fieldtype": "Section Break",
+   "label": "FFW Details"
+  },
+  {
+   "fieldname": "trust",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trust",
+   "options": "VCM Trust",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ffw_value",
+   "fieldtype": "Currency",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "FFW Value",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ffw_details",
+   "fieldtype": "Table",
+   "label": "FFW Details",
+   "options": "FFW Details CT"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-06 17:08:12.794909",
+ "modified_by": "Administrator",
+ "module": "VCM Vehicle",
+ "name": "Drivers FFW",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
